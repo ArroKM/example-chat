@@ -27,26 +27,22 @@ You will need PHP, Composer and Node.js. For MacOS I recommend installing them w
    ```sh
    npm install
    ```
-5. Create a sqlite database file in the database folder
-    ```sh
-    touch db.sqlite
-    ```
-6. Enter your API keys in `.env`
+5. Enter your API keys in `.env`
    ```
     PUSHER_APP_ID=
     PUSHER_APP_KEY=
     PUSHER_APP_SECRET=
     PUSHER_APP_CLUSTER=
    ```
-7. Enter the path to your database file
+6. Enter the path to your database file
     ```
-    DB_DATABASE=<Full path to the sqlite file>
+    DB_DATABASE=<Full path to the mysql file>
     ```
-8. Initilise the database
+7. Initilise the database
     ```sh
     php artisan migrate
     ```
-9. Compile the webpages and run it
+8. Compile the webpages and run it
     ```sh
     npm run dev
     php artisan serve
